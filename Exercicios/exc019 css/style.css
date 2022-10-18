@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+
+main {  
+    margin: auto;
+    padding: 30px;
+    font-size: 1em;
+    background-color: goldenrod;    
+    width: 70%;
+    border-radius: 25px;
+}
+
+#principal {
+    text-align: center;
+}
+
+.basico {
+    font-family: serif; 
+    font-style: italic;
+}
+
+.intermediario {
+    font-family: Tahoma, sans-serif;
+}
+
+.avancado {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+h1 {
+    color: #765324;
+}
+
+h2 {
+    color: #965c0f;
+}

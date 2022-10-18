@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>imagen dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplismente diminua seu navegador</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/pp.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/mm.png" type="image/png">
+        <img src="imagens/gg.png" alt="Imagen flexivel">
+    </picture>
+              <!-----sempre deixe a imagen menor em cima da menor pq se nao, nao funciona o efeito----->
+    <h1>reproduzindo audio</h1>
+    <p>vamos aprender a reprodiuzir áudios</p>
+    <!--uma forma de colocar audio é essa-->
+    <audio src="midia/WhatsApp Audio 2022-05-10 at 15.48.14.mpeg" controls autoplay></audio>
+    <!-- MP3 WAV OGG-->
+    <br>
+    <audio preload="auto" autoplay controls>
+        <source src="midia/WhatsApp Audio 2022-05-10 at 15.48.14.mpeg" type="audio/mpeg">
+        <source src="midia/WhatsApp Audio 2022-05-10 at 15.48.14.mpeg" type="audio/OGG">
+        <source src="midia/WhatsApp Audio 2022-05-10 at 15.48.14.mpeg" type="audio/WAV">
+        <p>infelizmente seu navegador nao consegue reproduzir seu audio</p>
+    </audio>
+    
+
+
+
+</body>
+</html>

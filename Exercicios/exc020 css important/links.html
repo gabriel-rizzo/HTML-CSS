@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+            SELETORES PERSONALIZADOS
+            #  =  id
+            .  =  class
+            :  =  pseudo-class
+            :: =  pseudo-elements
+            >  =  children(filho)        
+        
+        
+        
+        */
+        body {
+            font-family: Verdana, Tahoma, sans-serif;
+        }
+
+        a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a:active {
+            color: aquamarine;
+        }
+
+        .diferente {
+            background-color: #ff00007a;
+            color: #ffff;
+        }
+
+        .diferente::after {
+            content: '<-';
+        }
+
+        .diferente:before {
+            content: '->';
+        }
+    </style>
+
+</head>
+<body>
+    <h1>persnalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" class="diferente">youtube</a></li>
+        <li><a href="https://github.com/gustavoguanabara">github</a></li>
+        <li><a href="https://www.instagram.com/">instagram</a></li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgray;
+            width: 1200px;
+            height: 600px;
+            margin: auto;
+            
+        }
+
+        header {
+            background-color: white;
+            padding: 5px;
+            margin: 3px;
+            border-radius: 15px;
+            
+        }
+
+        header > h1 {
+           padding-left: 30px;
+            
+        }
+
+        h1 {
+            font-size: 40px;
+            padding: 4px;
+        }
+
+        main {
+            background-color: white;
+            padding: 4px;
+            margin: 3px;
+            border-radius: 15px;
+            
+        }
+
+        nav {
+            background-color: rgb(90, 90, 90);
+            border-radius: 15px;
+            text-align: center;
+            padding: 12px;
+            
+        }
+
+        a {
+            color: white;
+            font-weight: 500;
+            padding-right: 5px;
+            padding-left: 5px;
+
+        }
+
+        a:hover {
+            animation: backwards;
+            color: white;  
+            font-weight: 700;          
+        }
+
+        article {
+            background-color: darkgrey;
+            border-radius: 10px;
+            padding: 30px;
+        }
+
+        article > h2 {
+            text-align: center;
+            
+        }
+
+        article > p {
+            font-size: 1.1em;
+        }
+
+        aside {
+            max-width: 150px;
+            background-color: rgb(82, 82, 82);
+            color: white;
+            font-size: 11px;
+            font-weight: 300;
+            text-align: center;
+            padding: 1px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 60px;
+            padding: 1px;
+            margin: 0px;
+            border-radius: 15px;
+
+
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="noticias">
+
+        </section>
+        <section id="assuntos">
+            <article>
+                <h2>Noticias sobre Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae accusantium deleniti laborum consectetur obcaecati corporis sunt? Amet porro nisi adipisci ea et velit dolore, ab sunt alias magnam beatae nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sit nostrum ullam, esse est sed? Unde quidem quaerat provident sapiente facilis. Ab, explicabo eaque vero commodi necessitatibus odio enim porro?</p>
+                <aside>
+                    <p>Artigo Escrito por um Rizzo</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por mim mesmo</p>
+    </footer>
+
+    
+</body>
+</html>

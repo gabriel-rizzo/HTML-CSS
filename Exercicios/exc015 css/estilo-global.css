@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body {
+    font-size: 20px;            
+}
+h1{
+    font-family: impact;
+}
+h2 {
+    color: gray;
+    font-family: lucida;
+    font-style: bold;
+}
