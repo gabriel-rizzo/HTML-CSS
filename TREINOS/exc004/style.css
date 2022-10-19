@@ -52,7 +52,7 @@ header {
 
 header > h1 {
     font-family: 'Bebas Neue';
-    font-size: 45px;
+    font-size: 35px;
     text-align: center;
 }
 
@@ -87,7 +87,7 @@ nav > a:hover {
 
 main {
     background-color: white;
-    max-width: 70%;
+    max-width: 80%;
     padding: 10px 15px;
     margin: 3px;
     margin: auto;
@@ -96,7 +96,7 @@ main {
 
 main > h1 {
     font-family:'barca';
-    font-size: 40px;
+    font-size: 2em;
     text-align: center;
     color: #c700c7;
     
@@ -104,7 +104,7 @@ main > h1 {
 
 main > h2 {
     font-family: 'Silkscreen';
-    font-size: 25px;
+    font-size: 1.8em;
     background-image: linear-gradient(to right, #ba00babf, white);
     color: white;
 }
