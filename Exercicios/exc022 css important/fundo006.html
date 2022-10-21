@@ -12,15 +12,19 @@
             background-image: url('Imagens/wallpaper002.jpg');
             background-position: center top;
             background-repeat: no-repeat;
-            /* o background-size tem opções em escrito que são: auto, contain, cover(a mais interessante para se usar) mas depende do que vc quer */
+            /* o background-size tem opções em escrito que são: auto, contain, cover(a mais interessante para se usar) mas depende do que vc quer*/
             background-size: cover;
             /* o background-attchament tem duas opçoes uma é o scroll que faz a imagen rolar e a fixed que e o paralax*/
             background-attachment: fixed;
+
+            /* Shorthand - background
+                color > image > position > repeat > [size] > attachment 
+             background: black url('Imagens/wallpaper002.jpg') center center no-repeat  fixed;*/
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
