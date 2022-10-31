@@ -8,21 +8,39 @@
 <style>
     body {
         font-family: Arial, Helvetica, sans-serif;
-
+        font-size: 1.5em;
     }
 
     table {
-        width: 800px;
+        width: 1000px;
         border-collapse: collapse;
     }
+
+    caption {
+        text-align: center;
+        font-size: 35px;
+    }
+
     thead {
         background-color: lightslategray;
     }
 
+
     th, td {
-        width: 2000px;
         border: 1px solid black;
-        padding: 10px;
+        padding: 20px 40px 0px 40px;
+    }
+
+    #total, #pib {
+        padding: 0px 80px 0px 80px;
+    }
+                /* pode se usar tambem nessa pseudo classes: odd(numeros impares) e even(numeros pares) */
+    tbody > tr:nth-child(2n) {
+        background-color: darkgrey;
+    }
+
+    tfoot {
+        padding-right: 300px;
     }
 </style>
 
@@ -31,90 +49,141 @@
     <h1>Uso de tabelas grandes</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES
-        TABLE
-            THEAD
-                TR, TD, TH
-            TBODY
-                TR, TD, TH
-            TFOOT
-                TR, TD, TH	
+        CAPTION    
+            TABLE
+                THEAD
+                    TR, TD, TH
+                TBODY
+                    TR, TD, TH
+                TFOOT
+                    TR, TD, TH	
     -->
 
     
     <table>
+        <caption>População das Unidades Federativas</caption> 
         <thead>
             <tr>
-                <th>Bandeira</th>
-                <th>Unidade federativa</th>
-                <th>Abreviação</th>
-                <th>Sede de governo</th>
-                <th>Área (km²)</th>
-                <th>População (2014)</th>
-                <th>Densidade (2005)</th>
-                <th>PIB (2015)</th>
-                <th>(% total) (2015)</th>
-                <th>PIB per capita (R$) (2015)</th>
-                <th>IDH (2010)</th>
-                <th>Alfabetização (2016)</th>
-                <th>Mortalidade infantil (2016)</th>
-                <th>Expectativa de vida (2016)</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
         <tbody>
             <tr>
-                <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/68px-Bandeira_da_Bahia.svg.png" alt="Bahia"> </td>
-                <td>Bahia</td>
-                <td>BA</td>
-                <td>Salvador</td>
-                <td>564 692,7</td>
-                <td>15 150 143</td>
-                <td>24,46</td>
-                <td>245 025 000</td>
-                <td>4,1</td>
-                <td>16 115,89</td>
-                <td>0,660</td>
-                <td>87%</td>
-                <td>17,3‰</td>
-                <td>73,5 anos</td>
-            </tr>
-            <tr>
-                <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Bandeira_do_Distrito_Federal_%28Brasil%29.svg/68px-Bandeira_do_Distrito_Federal_%28Brasil%29.svg.png" alt="Distrito Federal"></td>
-                <td>Distrito Federal</td>
-                <td>DF</td>
-                <td>Brasília</td>
-                <td>5 822,1	</td>
-                <td>2 867 869</td>
-                <td>400,73</td>
-                <td>215 613 000</td>
-                <td>3,6</td>
-                <td>73 971,05</td>
-                <td>0,824</td>
-                <td>97,4%</td>
-                <td>10,5‰</td>
-                <td>78,1 anos</td>
-            </tr>
-            <tr>
-                <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/90px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt="sao Paulo"></td>
                 <td>São Paulo</td>
-                <td>SP</td>
-                <td>são Paulo</td>
-                <td>248 209,4	</td>
-                <td>44 169 350</td>
-                <td>162,93</td>
-                <td>1 939 890 000</td>
-                <td>32,4</td>
-                <td>43 694,68</td>
-                <td>0,783</td>
-                <td>97,2%</td>
-                <td>9,9‰</td>
-                <td>78,1 anos</td>
+                <td class="num">45.919.049</td>
             </tr>
-        </tbody>
-        <tfoot>
-
-        </tfoot>
-
-
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.433.957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.602.865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.164.788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.075.181</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.018.354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.144.597</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.018.650</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.018.127</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.506.853</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.484.466</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.337.357</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.273.227</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.015.268</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.778.986</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.298.696</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.777.225</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.572.866</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">881.935</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">845.731</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">605.761</td>
+            </tr>
+        </tbody>      
     </table>
 </body>
 </html>
