@@ -11,9 +11,15 @@
         }
 
         table {
+            width: 300px;
+            border-collapse: collapse;
+            margin-left: 40px;
+        }
+
+        td {
+            padding: 20px;
             border: 1px solid black;
             border-collapse: collapse;
-            padding: 10px;
         }
 
     </style>
@@ -23,23 +29,20 @@
     <table>
         <tr>
             <td>A</td>
-            <td>B</td>
-            <td>C</td>
+            <td colspan="2">B</td>
         </tr>
         <tr>
             <td>D</td>
             <td>E</td>
-            <td>F</td>
+            <td rowspan="2">F</td>
         </tr>
         <tr>            
-            <td>G</td>
             <td>H</td>
             <td>I</td>
         </tr>
         <tr>
-            <td>J</td>
             <td>K</td>
-            <td>L</td>
+            <td colspan="2">L</td>
         </tr>
     </table>
     
