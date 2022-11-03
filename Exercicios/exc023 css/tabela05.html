@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        #cnome {
+            background-color: darkmagenta;
+        }
+
+        #csexo {
+            background-color: blue;
+        }
+
+        #grupo {
+            background-color: forestgreen;
+        }
+
+    </style>
+
+    
+</head>
+<body>
+    <table>
+        
+        <colgroup>
+            <col id="cnome">
+            <col id="csexo">
+            <col id="cgrupo" span="2">
+        </colgroup>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>Feminino</td>
+            <td>30</td>
+            <td>Advogada</td>
+        </tr>
+        <tr>
+            <td>Isabela</td>
+            <td>feminino</td>
+            <td>28</td>
+            <td>Consultoria</td>
+        </tr>
+        <tr>
+            <td>Marcelo</td>
+            <td>Masculino</td>
+            <td>37</td>
+            <td>Jogador de Futebol</td>
+        </tr>
+        <tr>
+            <td>Gabriel Jesus</td>
+            <td>Masculino</td>
+            <td>29</td>
+            <td>Jogador de Futebol</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
