@@ -15,14 +15,30 @@
             border-collapse: collapse;
         }
 
-        td {
-            border: 1px solid black;
+        caption {
+            font-size: 1.5em;
+            padding-bottom: 20px;
+            font-weight: bold;
         }
 
+        td {
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        #total {
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
     <table>
+        <caption>Filmes Favoritos</caption>
         <thead>
             <tr>
                 <th>Grupo</th>
@@ -70,6 +86,12 @@
                 <td>Toy Story</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
     </table>
     
 </body>
