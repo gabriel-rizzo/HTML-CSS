@@ -55,4 +55,5 @@ main {
 
 #redes-sociais img:hover {
     border: 2px solid white;
+    transition: border 0.5s;
 }
