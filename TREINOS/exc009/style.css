@@ -42,6 +42,8 @@ main {
 
 #redes-sociais {
     text-align: right;
+    position: relative;
+    top: 150px;
 }
 
 #redes-sociais  img {
@@ -54,6 +56,6 @@ main {
 }
 
 #redes-sociais img:hover {
-    border: 2px solid white;
+    border: 2px solid red;
     transition: border 0.5s;
 }
