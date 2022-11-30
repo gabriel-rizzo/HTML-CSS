@@ -7,21 +7,26 @@
     <title>Formularío</title>
 </head>
 <body>
+
+    <!--- O jeito certo de usar o label é colocando ele no final
+        <input type="" name="" id=""><label for="">oque vode quer esecrever</label><br>
+        --->
+
     <h1>exeplo de formulario</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         <fieldset>
             <legend>Sexo</legend>
-            <input type="radio" name="" id="">
+            <input type="radio" name="sexo" id="iesxmas" value="M" checked><label for="iesxmas" >Masculino</label><br>
+            <input type="radio" name="sexo" id="iesfem" value="F"><label for="iesfem">Feminino</label>
         </fieldset>
         <fieldset>
             <legend>Esportes favoritos</legend>
-            <label for="iesfut"><input type="checkbox" name="esfut" id="iesfut"> Futebol</label><br>
+            <label for="iesfut"><input type="checkbox" name="esfut" id="iesfut" checked required> Futebol</label><br>
             <label for="iesvol"><input type="checkbox" name="esvol" id="iesvol"> Volei</label><br>
             <label for="iesbas"><input type="checkbox" name="esbas" id="iesbas"> Basquete</label><br>
             <label for="ieshan"><input type="checkbox" name="eshan" id="ieshan"> handball</label><br>
             <label for="iespin"><input type="checkbox" name="espin" id="iespin"> ping pong</label><br>
         </fieldset>
-
 
         <p>
             <input type="submit" value="Enviar">
