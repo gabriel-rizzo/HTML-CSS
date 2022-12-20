@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: darkgray;
+}
+
+nav {
+    background-color: #404040;
+    color: white;
+}
+
+ul {
+    display: inline-block;
+}
+
+li {
+    text-decoration: none;
+    
+}
