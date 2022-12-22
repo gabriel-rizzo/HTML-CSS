@@ -1,1 +1,19 @@
-@charset 
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+        #cabecalho {
+            display: none;
+        }
+
+        menu {
+            display: block;
+        }
+
+        menu li {
+            display: inline-block;
+        }
+
+        main {
+            width: 768px;
+        }
+}
